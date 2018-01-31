@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "interval";
+  src: url("interval.woff") format("woff")
+}
+
+
 body {
   margin: 0;
   padding: 0;
@@ -28,6 +34,8 @@ header a {
   color: #341E5A;
   text-decoration: none;
   cursor: pointer;
+  position: relative;
+  z-index: 20;
 }
 
 header a:hover {
@@ -35,16 +43,31 @@ header a:hover {
   color: white;
 }
 
+header .hero-text {
+  position: relative;
+  font: normal normal 47px/1.3 "p22-mackinac-pro", serif;
+  max-width: 700px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.hero-text:hover + .hero {
+  display: block;
+}
 
 header .hero {
   width: 100%;
-  max-width: 700px;
+  max-width: 1200px;
   margin-top: -1.5em;
+  position: absolute;
+  display: none;
 }
 
 @media (max-width: 750px) {
-  header a span {display: none;}
+  header .hero-text { font-size: 34px; }
+  header a span { display: none; }
   header .hero {  margin-top: 0; }
+  main li h3 { font-size: 31px; }
 }
 
 h1 {
@@ -55,6 +78,8 @@ h1 img {
   width: 60%;
   max-width: 700px;
   mix-blend-mode: multiply;
+  position: relative;
+  z-index: 20;
 }
 
 main {
