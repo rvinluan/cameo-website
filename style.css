@@ -7,6 +7,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: 'p22-mackinac-pro', serif;
 }
 
 header {
@@ -22,14 +23,10 @@ header {
 
 header a {
   font: normal normal 20px/1.5 'p22-mackinac-pro', serif;
-  // max-width: 300px;
   padding: 10px 35px;
   border-radius: 5px;
   margin-top: 0;
   display: block;
-  // background-color: #344196;
-  // background-color: #341E5A;
-  // background-color: #F3D3AE;
   border: 1px solid #341E5A;
   color: #341E5A;
   text-decoration: none;
@@ -45,7 +42,7 @@ header a:hover {
 
 header .hero-text {
   position: relative;
-  font: normal normal 47px/1.3 "p22-mackinac-pro", serif;
+  font: normal normal 25px/1.3 "p22-mackinac-pro", serif;
   max-width: 700px;
   z-index: 20;
   cursor: pointer;
@@ -128,7 +125,7 @@ li .metadata {
   flex-basis: 70%;
 }
 
-.column h4 {
+h4 {
   font: normal normal 18px/1 'p22-mackinac-pro', serif;
 }
 
